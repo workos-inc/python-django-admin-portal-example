@@ -17,13 +17,13 @@
                 {% csrf_token %}
                 <div class='flex_column'>
                     <div>
-                        <input type="text" placeholder='Enter Your Organization Name to Provision' id="org" name="org" class="text_input">
+                        <input type="text" placeholder='Enter Your Organization Name to Provision' id="org" name="org" class="text_input" required>
                     </div>
                     <div>
-                        <input type="text" placeholder='Enter a Space Separated List of Domains Used By the Org' id="domain" name="domain" class="text_input_2">
+                        <input type="text" placeholder='Enter a Space Separated List of Domains Used By the Org' id="domain" name="domain" class="text_input_2" required>
                     </div>
                     <div>
-                        <button type="submit" class="button">Submit Organization and Launch Admin Portal</button>
+                        <button type="submit" class="button">Create Organization and Log In</button>
                     </div>
                 </div>
             </form>

@@ -37,14 +37,17 @@ def provision_enterprise(request):
     global org_id 
     org_id = organization['id']
 
-    return redirect('admin_portal')
+    return render(request, 'admin_portal/org_logged_in.html')
 
 
-def admin_portal(request):
-    print('hit the admin portal route', org_id)
-
+def sso_admin_portal(request):
     portal_link = workos_client.portal.generate_link(
       organization=org_id, intent='sso'
     )
-    print(portal_link)
+    return redirect(portal_link['link'])
+
+def dsync_admin_portal(request):
+    portal_link = workos_client.portal.generate_link(
+      organization=org_id, intent='dsync'
+    )
     return redirect(portal_link['link'])

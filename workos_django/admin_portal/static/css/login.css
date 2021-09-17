@@ -100,6 +100,10 @@ body {
     color: white;
 }
 
+.dsync_button {
+    width: 400px;
+}
+
 .login_button {
     width: 95%;
 }
