@@ -22,7 +22,7 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
 
    ```bash
    # SSH
-   $ git git@github.com:workos-inc/python-django-admin-portal-example.git
+   $ git clone git@github.com:workos-inc/python-django-admin-portal-example.git
    ```
 
 ### Install Dependencies
