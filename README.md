@@ -120,6 +120,8 @@ A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-i
 
 13. Once the server is running, navigate to http://localhost:8000 to view the home page of the app. Here you'll enter the name of the Organization to be created, and all associated domains. The domains should be entered as space-separated values, e.g. `domain1.com domain2.com domain3.com`
 
+Note that the organization must be a new organization that does not yet exists in your WorkOS dashboard. 
+
 14. Click on the button to create your Organization and log in to the Admin Portal workflow! 
 
 ## Need help?
