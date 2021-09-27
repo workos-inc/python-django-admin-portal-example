@@ -1,4 +1,4 @@
-# python-django-magic-link-example
+# python-django-admin-portal-example
 A basic Django app that uses the [WorkOS Python SDK](https://github.com/workos-inc/workos-python) to access the Admin Portal.
 
 ## Prerequisites
