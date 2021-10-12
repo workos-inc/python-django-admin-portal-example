@@ -23,13 +23,18 @@ def index(request):
 
 
 def provision_enterprise(request):
+    # Create global variable for org_id
     global org_id
+
+    # retrieve and set variables for the organiation and domains
     organization_name =  request.POST['org']
     organization =  request.POST['domain']
+
+    # use split to modify the domains in to a list type
     organization_domains = organization.split()
     
+    # Check if a matching domain already exists and set global org_id if there is a match
     orgs = orgs = workos_client.organizations.list_organizations(domains=organization_domains)
-    print(orgs["data"])
     if len(orgs["data"]) > 0:
         org_id = orgs['data'][0]['id']
 
